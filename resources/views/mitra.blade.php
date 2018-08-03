@@ -11,6 +11,7 @@
       <div class="container">    
         <div class="row">
         @foreach($datachunk as $add)
+        <a href="" onclick="{{Session::put($add ->id)}}">
           <div class="col-sm-4">
             <div class="panel panel-primary">
               <div class="panel-heading">{{$add->name}}</div>
@@ -18,6 +19,7 @@
               <div class="panel-footer">{{$add->promote}}</div>
             </div>
           </div>
+        </a>
         @endforeach
         </div>
       </div>
