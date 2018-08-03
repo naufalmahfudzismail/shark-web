@@ -29,25 +29,53 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */ 
+        .navbar {
+          margin-bottom: 0;
+          border-radius: 0;
+        }
+        
+        /* Add a gray background color and some padding to the footer */
+        footer {
+          background-color: #f2f2f2;
+          padding: 25px;
+        }
+
+        .content
+        {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+      </style>
+
 </head>
 
 <body>
 
-<div id="wrapper">
-    <aside id="sideBar">
-        <ul class="main-nav">
-            <!-- Your Logo Or Site Name -->
-            <li class="nav-brand">
-                <a href="/">Shark Property</a>
-            </li>
-            <li>
-                <a href="/login">- Login</a>
-            </li>
-            <li>
-                <a href="/register">- Daftar Isi</a>
-            </li>
-        </ul>
-    </aside>
+<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">Home Design</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/home_user">Home</a></li>
+              <li><a href="/register">Register</a></li>
+              <li><a href="/listGame">List Game</a></li>
+              <li><a href="/listMitra">List Mitra</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+     </div>
+</nav>
 
     @yield('content') {{-- Semua file konten kita akan ada di bagian ini --}}
 

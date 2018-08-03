@@ -5,7 +5,7 @@
         <!-- Add Your Content Inside -->
         <div class="content">
             <!-- Remove This Before You Start -->
-            <h1>Anak IT -  Register</h1>
+            <h1>HomeDesign Register</h1>
             <hr>
             @if ($errors->any())
                 <div class="alert alert-danger">

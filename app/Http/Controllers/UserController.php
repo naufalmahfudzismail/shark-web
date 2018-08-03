@@ -61,6 +61,7 @@ class UserController extends Controller
             'address' => 'required|min:8',
             'phone' => 'required|min:11',
         ]);
+        
         $data = new ModelUser();
         $data->name = $request->name;
         $data->email = $request->email;
