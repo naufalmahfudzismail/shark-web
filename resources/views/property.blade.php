@@ -3,7 +3,7 @@
      <section class="main-section">
 <div class="jumbotron">
         <div class= "container text-center">
-        <img src= "{{$mitra->image}}" class="poster"   alt="Image">   
+        <img src= "\{{$mitra->image}}" class="img" style="width:500px; height:200px;" alt="Image">   
           <h1>{{$mitra->name}} </h1>      
           <p>{{$mitra->description}}</p>
         </div>

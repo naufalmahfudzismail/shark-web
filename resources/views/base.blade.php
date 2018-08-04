@@ -41,26 +41,19 @@
           background-color: #f2f2f2;
           padding: 25px;
         }
-
         .content
         {
             padding-left: 50px;
             padding-right: 50px;
         }
-        .poster
-        {
-          padding-top: 50px;
-          width: 300px;
-          height: 200px;
-          display: block;
-        
-        }
+        .img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
       </style>
-
 </head>
-
 <body>
-
 <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
