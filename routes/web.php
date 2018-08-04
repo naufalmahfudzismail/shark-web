@@ -26,3 +26,4 @@ Route::post('/registerPost', 'UserController@registerPost');
 Route::get('/logout', 'UserController@logout');
 Route::get('/listGame', 'GameController@index');
 Route::get('/listMitra', 'MitraController@index');
+Route::get('/detail/{id}', 'PropertyController@getIdMitra'); //get id mitra to view property

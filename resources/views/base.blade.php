@@ -47,6 +47,14 @@
             padding-left: 50px;
             padding-right: 50px;
         }
+        .poster
+        {
+          padding-top: 50px;
+          width: 300px;
+          height: 200px;
+          display: block;
+        
+        }
       </style>
 
 </head>
