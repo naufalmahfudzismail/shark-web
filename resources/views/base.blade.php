@@ -72,8 +72,13 @@
               <li><a href="/listMitra">List Mitra</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              @if (!Session::get('login')) 
+                <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              @else
+                <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+              @endif
             </ul>
+            
           </div>
      </div>
 </nav>
