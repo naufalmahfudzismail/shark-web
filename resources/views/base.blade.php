@@ -68,8 +68,8 @@
             <ul class="nav navbar-nav">
               <li class="active"><a href="/home_user">Home</a></li>
               <li><a href="/register">Register</a></li>
-              <li><a href="/listGame">List Game</a></li>
-              <li><a href="/listMitra">List Mitra</a></li>
+              <li><a href="/listGame">Dummy</a></li>
+              <li><a href="/listMitra">Partner</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               @if (!Session::get('login')) 
@@ -78,13 +78,11 @@
                 <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
               @endif
             </ul>
-            
           </div>
      </div>
 </nav>
 
     @yield('content') {{-- Semua file konten kita akan ada di bagian ini --}}
-
 
 </div>
 <!-- /#wrapper -->

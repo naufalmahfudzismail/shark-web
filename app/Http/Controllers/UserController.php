@@ -60,13 +60,14 @@ class UserController extends Controller
             'address' => 'required|min:8',
             'phone' => 'required|min:11',
         ]);
-        
+
         $data = new ModelUser();
         $data->name = $request->name;
         $data->email = $request->email;
         $data->password = bcrypt($request->password);
         $data->alamat = $request->address;
         $data->no_hp = $request->phone;
+        $data->remember_token = str_random(30);
         $data->save();
         return redirect('login')->with('alert-success', 'Kamu berhasil Register');
     }
