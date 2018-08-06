@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,4 +28,6 @@ Route::post('/registerPost', 'UserController@registerPost');
 Route::get('/logout', 'UserController@logout');
 Route::get('/listGame', 'GameController@index');
 Route::get('/listMitra', 'MitraController@index');
+Route::post('/photo_profile', 'UserController@ImagePost');
+Route::get('/photo_profile', 'UserController@ImageLoad');
 Route::get('/detail/{id}', 'PropertyController@getIdMitra'); //get id mitra to view property

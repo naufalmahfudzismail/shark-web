@@ -41,16 +41,28 @@
           background-color: #f2f2f2;
           padding: 25px;
         }
+
+        /*inline-block size followd by content*/
         .content
         {
-            padding-left: 50px;
+            padding-left : 50px;
             padding-right: 50px;
+            padding-bottom : 10px;
+            /*display: inline-block; */
+
         }
-        .img {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
+        .img 
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .carousel-inner img
+        {
+            width: 100%; /* Set width to 100% */
+            margin: auto;
+            min-height:200px;
+        }
       </style>
 </head>
 <body>
@@ -85,6 +97,14 @@
     @yield('content') {{-- Semua file konten kita akan ada di bagian ini --}}
 
 </div>
+<br>
+<footer class="container-fluid text-center">
+    <p>Online Store Copyright</p>  
+    <form class="form-inline">Get deals:
+      <input type="email" class="form-control" size="50" placeholder="Email Address">
+      <button type="button" class="btn btn-danger">Sign Up</button>
+    </form>
+  </footer>
 <!-- /#wrapper -->
 
 <!-- jQuery -->

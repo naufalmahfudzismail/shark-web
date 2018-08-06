@@ -37,7 +37,9 @@ class MitraController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $data = new ModelMitra();
+        
     }
 
     /**
